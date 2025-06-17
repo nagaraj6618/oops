@@ -107,6 +107,13 @@ Car myCar = new Car();
 
 ***⚠️ Even though no return statement is written, the JVM returns the object behind the scenes.***
 
+| Statement         | Allowed? | Explanation                                          |
+|------------------|----------|------------------------------------------------------|
+| `return;`         | ✅ Yes   | Used to exit the constructor early (no value)       |
+| `return this;`    | ❌ No    | Not allowed — constructors cannot return objects    |
+| `return obj;`     | ❌ No    | Not allowed — cannot return any value or object     |
+
+
 ## ✅ Summary
 Constructor: Used to initialize objects when they're created.
 
