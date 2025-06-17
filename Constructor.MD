@@ -83,6 +83,30 @@ public class Test {
 
 **clone()**
 
+# 🔍 Does a Constructor Return Any Value in Java?
+
+## ✅ Short Answer
+
+- A **constructor does not have a return type**, not even `void`.
+- But **internally**, it **returns the current class instance**, which is how object creation and assignment work.
+
+---
+
+## 🧠 Detailed Explanation
+
+When you write:
+
+```java
+Car myCar = new Car();
+```
+- The constructor Car() is called.
+
+- It creates a new object of type Car.
+
+- Internally, the object is returned and assigned to myCar.
+
+***⚠️ Even though no return statement is written, the JVM returns the object behind the scenes.***
+
 ## ✅ Summary
 Constructor: Used to initialize objects when they're created.
 
